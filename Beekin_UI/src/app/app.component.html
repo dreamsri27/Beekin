@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeeUi</title>
+</head>
+<body>
+  
+  <mat-card class="jumbotron-card">
+    <mat-card-content style="color: beige;">
+      <h1 class="jumbotron-title">Careers at Beekin</h1>
+      <p class="jumbotron-description">
+       
+        It's your chance to shape the future. We're a building a better <br> tomorrow. Come join us in our journey.
+      </p>
+    </mat-card-content>
+  </mat-card>
+            <p style="font-size: 40px; font-weight: 500; margin: 20px; align-items: center;">Current Openings</p>
+      <div class="ag-format-container">
+  <div class="carditem_box" >
+    <div class="carditem_item" *ngFor="let card of data">
+      <a (click)="applyToJob(card.id)" class="carditem-item_link">
+        <div class="carditem-item_bg"></div>
+
+        <div class="carditem-item_title">
+          {{card.type}}
+        </div>
+
+        <div class="carditem-item_date-box" style="margin-bottom: 12px;">
+          
+         {{card.desc}}
+         <br>
+        </div>
+      </a>
+    </div>
+
+   
+
+   
+   
+
+  </div>
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,52 @@
+.jobform {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mat-dialog-content {
+  max-height: 400px; 
+  overflow: auto;
+  padding: 10px;
+}
+
+.mat-dialog-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mat-dialog-content::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+.mat-dialog-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+.mat-dialog-content {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f2f2f2; 
+}
+
+.mat-form-field {
+  color: #777; 
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formField {
+  margin: 10px 0;
+}
+
+.mat-dialog-actions {
+  margin-top: 20px;
+}

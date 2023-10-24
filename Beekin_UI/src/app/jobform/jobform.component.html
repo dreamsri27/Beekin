@@ -1,0 +1,30 @@
+
+<div class="jobform">
+  <h2 class="form-title">Job Application Form</h2>
+  <mat-dialog-content>
+    <form [formGroup]="formJob" class="job-form">
+      <mat-form-field class="formField">
+        <input matInput placeholder="Name" formControlName="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Email" formControlName="mail">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Education" formControlName="education">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Years of Experience" formControlName="experience" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Skills" formControlName="skills">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Projects" formControlName="projects">
+      </mat-form-field>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button class="cancel-button" color="warn" (click)="closeDialog()">Close</button>
+    <button mat-button class="submit-button" color="primary" (click)="submitForm()" [disabled]="formJob.invalid">Submit</button>
+  </mat-dialog-actions>
+</div>
